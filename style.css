@@ -38,6 +38,7 @@ h1{
 
 img {
     width: 150px;
+    padding: 10%
 }
 
 .icons {
@@ -86,5 +87,10 @@ td {
         margin: 10%;
         justify-content: space-around;
         vertical-align: middle;
+    }
+    
+    .arrow {
+        margin-left: 60%;
+        width: 30% 
     }
   }
