@@ -1,0 +1,69 @@
+/* html {
+    cursor: none;
+    
+} */
+
+/* Start http://www.cursors-4u.com */ 
+/* * {cursor: url(http://cur.cursors-4u.net/nature/nat-9/nat833.cur), auto !important;}  */
+/* End http://www.cursors-4u.com */
+
+body {
+    color: #002DFF;
+    font-family: helvetica;
+    text-align: center;
+    cursor: url('fly.png'), url('fly.ico'), url('fly.cur') auto!important;
+
+}
+
+/* hyperlink colors */
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: blue;
+}
+a:hover {
+    color: rgb(255, 129, 255);
+}
+
+
+
+h1{
+    text-align: center;
+    margin-top: 7%;
+}
+
+img {
+    width: 150px;
+
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15%;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+#profile {
+    width: 700px;
+}
+
+table {
+    display: flex;
+    justify-content: space-around;
+}
+
+td {
+    padding: 50px;
+}
+
+.arrow {
+    margin-left: 60%;
+}
+
+.backhome {
+    color: rgb(255, 129, 255);
+    
+}
