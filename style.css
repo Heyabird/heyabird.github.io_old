@@ -64,6 +64,7 @@ td {
 
 .arrow {
     margin-left: 60%;
+    margin-bottom: 0px;
     width: 10% 
 }
 
@@ -81,6 +82,7 @@ td {
     }
 
 
+
     .icons{
         display: flex;
         flex-wrap: wrap;
@@ -92,5 +94,9 @@ td {
     .arrow {
         margin-left: 60%;
         width: 30% 
+    }
+
+    #profile {
+        width: 400px;
     }
   }
