@@ -1,7 +1,7 @@
-/* html {
-    cursor: none;
-    
-} */
+* {
+        /* cursor: url(fly.cur), auto !important; */
+        cursor: url(//github.com/Heyabird/heyabird.github.io/blob/master/fly.cur?raw=true), auto !important;
+}
 
 /* Start http://www.cursors-4u.com */ 
 /* * {cursor: url(http://cur.cursors-4u.net/nature/nat-9/nat833.cur), auto !important;}  */
@@ -11,7 +11,8 @@ body {
     color: #002DFF;
     font-family: helvetica;
     text-align: center;
-    cursor: url('fly.png'), url('fly.ico'), url('fly.cur') auto!important;
+    /* cursor: auto; */
+    /* cursor: url(fly.cur)!important; */
 
 }
 
