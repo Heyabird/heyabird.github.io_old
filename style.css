@@ -1,19 +1,21 @@
-* {
-        /* cursor: url(fly.cur), auto !important; */
-        cursor: url(//github.com/Heyabird/heyabird.github.io/blob/master/fly.png?raw=true), auto !important;
-}
+/* * {cursor: url(https://github.com/Heyabird/heyabird.github.io/blob/master/fly.png?raw=true), auto !important;} */
 
 /* Start http://www.cursors-4u.com */ 
-/* * {cursor: url(http://cur.cursors-4u.net/nature/nat-9/nat833.cur), auto !important;}  */
+* {cursor: url(fly.png) 1 1, auto}
 /* End http://www.cursors-4u.com */
 
 body {
     color: #002DFF;
     font-family: helvetica;
     text-align: center;
+    /* background-image: url(https://github.com/Heyabird/heyabird.github.io/blob/master/fly.png?raw=true); */
     /* cursor: auto; */
     /* cursor: url(fly.cur)!important; */
 
+}
+
+#websiteName {
+    margin-top: 7%;
 }
 
 /* hyperlink colors */
@@ -23,48 +25,66 @@ a {
 a:link, a:visited {
     color: blue;
 }
-a:hover {
+img:hover, a:hover {
     color: rgb(255, 129, 255);
+    cursor: url(fly2.png), auto
 }
-
 
 
 h1{
     text-align: center;
-    margin-top: 7%;
+    margin-top: 10px;
 }
 
 img {
     width: 150px;
-
 }
 
 .icons {
     display: flex;
     flex-wrap: wrap;
-    margin: 15%;
+    margin: 10%;
     justify-content: space-around;
     vertical-align: middle;
 }
 
 #profile {
-    width: 700px;
+    width: 650px;
 }
 
-table {
+/* table {
     display: flex;
     justify-content: space-around;
 }
 
 td {
-    padding: 50px;
-}
+    padding: 20px;
+} */
 
 .arrow {
     margin-left: 60%;
+    width: 10% 
 }
 
 .backhome {
     color: rgb(255, 129, 255);
     
 }
+
+/* for smartphones */
+
+@media only screen and (max-width: 600px) {
+
+    img {
+        width: 100px;
+    }
+
+
+    .icons{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10%;
+        justify-content: space-around;
+        vertical-align: middle;
+    }
+  }
