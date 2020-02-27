@@ -11,8 +11,9 @@ body {
     /* background-image: url(https://github.com/Heyabird/heyabird.github.io/blob/master/fly.png?raw=true); */
     /* cursor: auto; */
     /* cursor: url(fly.cur)!important; */
-
 }
+
+
 
 #websiteName {
     margin-top: 7%;
@@ -86,7 +87,7 @@ td {
     .icons{
         display: flex;
         flex-wrap: wrap;
-        margin: 10%;
+        margin: 0%;
         justify-content: space-around;
         vertical-align: middle;
     }
