@@ -11,9 +11,8 @@ body {
     /* background-image: url(https://github.com/Heyabird/heyabird.github.io/blob/master/fly.png?raw=true); */
     /* cursor: auto; */
     /* cursor: url(fly.cur)!important; */
+
 }
-
-
 
 #websiteName {
     margin-top: 7%;
@@ -37,14 +36,17 @@ h1{
     margin-top: 10px;
 }
 
-p{
-    text-align: center;
-    margin: auto;
-}
-
 img {
     width: 150px;
-    padding: 10%
+
+}
+
+.homeicons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+    justify-content: space-around;
+    vertical-align: middle;
 }
 
 .icons {
@@ -70,8 +72,7 @@ td {
 
 .arrow {
     margin-left: 60%;
-    margin-bottom: 0px;
-    width: 10% 
+    width: 10%
 }
 
 .backhome {
@@ -80,29 +81,18 @@ td {
 }
 
 /* for smartphones */
-
 @media only screen and (max-width: 600px) {
-
-    img {
+    .icons{
+        padding: 10px;
+    }
+    #profile{
+        width: 350px;
+    }
+    .arrow{
         width: 100px;
     }
-
-
-
-    .icons{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0%;
-        justify-content: space-around;
-        vertical-align: middle;
-    }
-    
-    .arrow {
-        margin-left: 60%;
-        width: 30% 
-    }
-
-    #profile {
-        width: 400px;
+    .contacticon{
+        width: 50px;
+        padding: 40px;
     }
   }
