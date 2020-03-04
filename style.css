@@ -4,6 +4,12 @@
 /* * {cursor: url(fly.png) 1 1, auto} */
 /* End http://www.cursors-4u.com */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 body {
     color:#171717;
     font-family: roboto;
@@ -73,8 +79,8 @@ img {
     vertical-align: middle;
 }
 
-.homeicons {
-   
+.homeicons, .p {
+   display: inline-block;
 }
 
 .contacticon {
@@ -123,6 +129,9 @@ td {
     z-index: 99;
   }
   
+
+
+
   /* Style the navbar links */
   #navbar a {
     font-family: 'Krona One', ;
@@ -165,15 +174,18 @@ td {
 /* for smartphones */
 @media only screen and (max-width: 600px) {
     #navbar {
-        padding: 20px 2px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-      }
+        padding: 10px 2px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+        font-size: 10px;
+    }
       #navbar a {
         float: none;
         display: block;
         text-align: left;
       }
       #navbar-right {
-        float: none;
+        float: right;
+        padding-right: 20px;
+        
       }
     .icons{
         padding: 10px;
@@ -195,3 +207,6 @@ td {
         font-size: 25px;
     }
   }
+
+
+  
