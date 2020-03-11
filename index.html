@@ -1,30 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Heya!</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
- 
-</head>
-<body>
-    <br/>
-  <br/>
-  <h1>
-    <a href="" class="typewrite" data-period="2000" data-type='[ "Heya, World!"]'><span class="wrap"></span>
-    </a>
-  </h1>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 
-  <div class="icons">
-    <a class="nav-link" href="about.html"><img src="portfolio-icons/coffee.png" alt="coffee"><h2>about</h2> </a>
-    <a class="nav-link" href="projects.html"><img src="portfolio-icons/laptop.png" alt="laptop"><h2>projects</h2></a>
-    <a class="nav-link" href="contact.html"><img src="portfolio-icons/phone.png" alt="phone"><h2>contact</h2></a>
+
+</head>
+<body class="demo">
+
+  <!-- LOADING SCREEN -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+
+  </div>
+
+<div id="content">
+  <!-- NAV BAR -->
+      <div id="navbar">
+        <div id=navbar-left>
+        <a href="#about"><img id="logo" src="portfolio-icons/hi.png"/></a>
+      </div>
+        <div id="navbar-right">
+          <!-- <a href="resume.pdf" target="_blank"><div id="bordered">resume</div> </a> -->
+          <a href="moreabout.html" id="pinktext">about</a>
+          <a class="active" href="#skills"> skills</a>
+          <a href="#projects"> work</a>
+        </div>
+      </div>
+        
+      <div class= "about" id="about">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1 class="typewrite" data-period="2000" data-type='[ "Heya, World! 💕"]'><span class="wrap"></span>
+        </h1>  
+        <br/>
+        <p>My name is Heya Kwon, and I am a full-stack developer. </p>
+        <p>I like to code, meditate, and create.</p>
+        <br/>
+        <a href="moreabout.html" ><div id="textbox">more about me</div> </a>
+        <!-- <a href="mailto:heyabird@gmail.com?subject=Let's-Work-Together!" target="_blank"><div id="textbox">get in touch</div> </a> -->
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+      
+
+      <div class="skills" id="skills">
+        <br/>
+        <br/>
+        <h1 class="typewrite" data-period="2000" data-type='[ "my full-stack skills ⛏"]'><span class="wrap"></span>
+        </h1>  
+        <br/>
+        <br/>
+        <div class="skillsbox">
+          <div class="skillsbox1">
+          <p>Front-end </p>
+          <p> &nbsp;</p>
+          <p>Back-end</p>
+          <p> &nbsp;</p>
+          <p>Testing</p>
+          <p> &nbsp;</p>
+          <p>SQL</p>
+          <p>Git Flow</p>
+          <p>Design</p>
+        </div>
+        <div class="skillsbox2">
+          <p>Javascript/React</p>
+          <p>CSS/HTML</p>
+          <p>Ruby on Rails</p>
+          <p>Python</p>
+          <p>Jest </p>
+          <p>Enzyme</p>
+          <p>Postgresql</p>
+          <p>Github</p>
+          <p>Sketch/Figma</p>
+          <p>Photoshop</p>
+        </div>
+        </div>
+      </div>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <div class="projects" id="projects">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1 class="typewrite" data-period="2000" data-type='[ "my projects 👩🏻‍💻"]'><span class="wrap"></span>
+        </h1>  
+        <br/>
+        <br/>
+        <br/>
+        <div class="homeicons">
+          <div class="projectbox">
+            <h2>cat tinder</h2>
+            <br/>
+              <img src="portfolio-icons/hi.png" />
+              <p>A dating app for felines.</p>
+              <p>React, Ruby on Rails</p>
+          </div>
+          <div class="projectbox">
+            <h2>crybot</h2>
+            <br/>
+            <img src="portfolio-icons/hi.png" />
+            <p>This chatbot tells you where to cry.</p>
+            <p>Python</p>
+          </div>
+          <div  class="projectbox">
+            <h2>capstone</h2>
+            <br/>
+            <img src="portfolio-icons/hi.png" />
+            <p>A top-tier search engine.</p>
+            <p>React, Ruby on Rails</p>
+          </div>
+        </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>  
+      <br/>
+      <br/> 
+      <br/>
+      <p id=websitecredit1>designed and built by heya</p> 
+      <br/>
+      </div>
+    
+
+      <!-- FOOTER BAR -->
+      <div id="footer">
+      <br/>
+        <div id="navbar-bottom">
+          contact me!  &nbsp;
+            <a href="https://github.com/heyabird" target="_blank">github	&nbsp;</a>
+            <a href="https://www.linkedin.com/in/heya-kwon-670821a7/" target="_blank">linkedin &nbsp;</a>
+            <a href="mailto:heyabird@gmail.com?subject=Let's-Work-Together!" target="_blank">email &nbsp;</a>
+            <br/>
+            <br/>
+        </div>
+      </div> 
+
 </div>
 
-
+<script src="app.js"></script>
+<script type="text/javascript" src="jQuery.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 </body>
+
 </html>
