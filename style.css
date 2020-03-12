@@ -20,7 +20,7 @@ body {
 }
 
 #aboutbody {
-    background: linear-gradient(-10deg, #dae0ff,#a8b5ff,#a8cbff );
+    background: linear-gradient(-10deg, #dae0ff,#b9c4ff,#a8cbff );
 }
 
 #pinktext {
@@ -290,6 +290,7 @@ img:hover, a:hover {
     #navbar-bottom {
         font-size: 14px;
         font-weight: bold;
+        text-align: center;
         float: center;
         margin: auto;
         color: rgb(255, 73, 137);
@@ -303,12 +304,13 @@ img:hover, a:hover {
         width: 350px;
     }
 
-    #moreaboutdescription {
+    #moreaboutbox {
         width: 280px;
         font-size: 16px;
         padding: 10px;
         margin: auto;
         text-align: center;
+        float: center;
     }
 
     .contacticon{
