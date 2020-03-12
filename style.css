@@ -287,6 +287,14 @@ img:hover, a:hover {
         visibility: hidden;
     }
 
+    #navbar-bottom {
+        font-size: 14px;
+        font-weight: bold;
+        float: center;
+        margin: auto;
+        color: rgb(255, 73, 137);
+    }
+
     .icons{
         padding: 5px;
     }
