@@ -36,7 +36,7 @@ h1{
 }
 
 h2{
-    font-family: 'Quicksand';
+    font-family: 'Nunito';
 }
 
 h1, h2, h3{
@@ -44,7 +44,7 @@ h1, h2, h3{
 }
 
 p {
-    font-family: 'Quicksand';
+    font-family: 'Nunito';
 }
 
 #textbox {
@@ -92,7 +92,7 @@ img:hover, a:hover {
 
   /* Create a sticky/fixed navbar */
   #navbar {
-    font-family: 'Quicksand' ;
+    font-family: 'Nunito' ;
     overflow: hidden;
     background-color: rgb(255, 255, 255,0);
     padding: 40px 10px; /* Large padding which will shrink on scroll (using JS) */
