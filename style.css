@@ -296,9 +296,10 @@ img:hover, a:hover {
     }
 
     #moreaboutdescription {
-        width: 250px;
-        font-size: 15px;
+        width: 280px;
+        font-size: 16px;
         padding: 10px;
+        margin: auto;
         text-align: center;
     }
 
