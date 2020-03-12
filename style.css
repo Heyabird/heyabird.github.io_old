@@ -235,10 +235,11 @@ img:hover, a:hover {
 }
 
 #moreaboutbox {
-    width: 500px;
+    width: 550px;
     text-align: left;
     display: inline-block;
     float: center;
+    padding: 30px;
 }
 
 .profileborder {
@@ -246,7 +247,8 @@ img:hover, a:hover {
     height: 210px;
     border: 1px black solid;
     display:inline-block;
-    margin: 5px 20px 0px 0px;
+    margin: auto;
+    padding: 3px;
 }
 
 #websitecredit1 {
