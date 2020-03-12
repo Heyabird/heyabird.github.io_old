@@ -314,7 +314,7 @@ img:hover, a:hover {
     /* float:left; */
     margin: auto;
     padding: 30px 0px 30px 0px;
-    width: 280px;
+    width: 230px;
     font-size: 15px;
     text-align: left;
     border: 1px black solid;
@@ -323,7 +323,7 @@ img:hover, a:hover {
 
     #moreaboutbox {
         width: 270px;
-        font-size: 15px;
+        font-size: 17px;
         padding: 10px;
         margin: auto;
         text-align: center;
@@ -332,7 +332,7 @@ img:hover, a:hover {
 
     h1{
         font-size: 25px;
-        padding-top: 50px;
+        padding-top: 60px;
     }
   }
 
