@@ -275,12 +275,14 @@ img:hover, a:hover {
         padding: 10px 2px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
         font-size: 10px;
     }
+
     #navbar a {
     float: none;
     display: block;
     text-align: center;
     /* visibility: hidden; */
     }
+
     #navbar-right {
     float: right;
         padding-right: 20px;
@@ -288,7 +290,7 @@ img:hover, a:hover {
     }
 
     #navbar-bottom {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         text-align: center;
         float: center;
@@ -296,26 +298,25 @@ img:hover, a:hover {
         color: rgb(255, 73, 137);
     }
 
-    .icons{
-        padding: 5px;
-    }
-    
-    #profile{
-        width: 350px;
+    .skillsbox {
+    /* display: inline-block; */
+    /* float:left; */
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    width: auto;
+    font-size: 15px;
+    text-align: left;
+    border: 1px black solid;
+    display: inline-block
     }
 
     #moreaboutbox {
-        width: 280px;
-        font-size: 16px;
+        width: 270px;
+        font-size: 15px;
         padding: 10px;
         margin: auto;
         text-align: center;
         float: center;
-    }
-
-    .contacticon{
-        width: 30px;
-        padding: 40px;
     }
 
     h1{
