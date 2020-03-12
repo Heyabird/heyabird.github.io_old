@@ -295,8 +295,11 @@ img:hover, a:hover {
         width: 350px;
     }
 
-    .arrow{
-        width: 100px;
+    #moreaboutdescription {
+        width: 250px;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
     }
 
     .contacticon{
