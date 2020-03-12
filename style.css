@@ -314,7 +314,7 @@ img:hover, a:hover {
     /* float:left; */
     margin: auto;
     padding: 30px 0px 30px 0px;
-    width: auto;
+    width: 300;
     font-size: 15px;
     text-align: left;
     border: 1px black solid;
@@ -332,7 +332,7 @@ img:hover, a:hover {
 
     h1{
         font-size: 25px;
-        padding-top: 30px;
+        padding-top: 50px;
     }
   }
 
