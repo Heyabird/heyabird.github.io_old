@@ -77,3 +77,17 @@ function scrollFunction() {
 window.addEventListener("beforeunload",function(e){
   document.body.className = "page-loading";
 },false);
+
+
+//Modal Button
+
+
+$('#modal_button').click(function(e) {
+  $('.modal').addClass('active');
+  e.preventDefault();
+});
+
+$('.modal').click(function(e) {
+  $('.modal').removeClass('active');
+  e.preventDefault();
+});

@@ -23,6 +23,10 @@ body {
     background: linear-gradient(-10deg, #dae0ff,#b9c4ff,#a8cbff );
 }
 
+#projectbody {
+    background: linear-gradient(-10deg, #dae0ff,#f9ffc2,#aeffa3 );
+}
+
 #pinktext {
     color: rgb(255, 73, 137);
 }
@@ -32,19 +36,17 @@ h1{
     text-align: center;
     font-weight: 100;
     font-family: 'space mono';
-    padding-top: 140px;
+    padding-top: 110px;
 }
 
-h2{
-    font-family: 'Nunito';
-}
-
-h2{
+h3{
+    /* font-family: 'Nunito'; */
     margin-top: 30px;
 }
 
 p {
     font-family: 'Nunito';
+    font-size: 15px;
 }
 
 #textbox {
@@ -77,7 +79,7 @@ a:link, a:visited {
 }
 
 #aspecial {
-    color:#4b4b4b;
+    color:rgb(255, 73, 137);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -174,7 +176,7 @@ img:hover, a:hover {
    /* float:left; */
    margin: auto;
    padding: 30px 0px 30px 0px;
-   width: 370px;
+   width: 360px;
    font-size: 15px;
    text-align: left;
    border: 1px black solid;
@@ -206,10 +208,11 @@ img:hover, a:hover {
 
 .projectbox {
     display: inline-block;
-    width: 300px;
-    height: 400px;
+    width: 260px;
+    height: 380px;
     border: 1px black solid;
     margin: 10px;
+    size: 15px;
 }
 
 .p1 {
@@ -228,20 +231,20 @@ img:hover, a:hover {
 }
 
 #moreaboutbox {
-    width: 550px;
-    text-align: left;
+    width: 520px;
+    text-align: center;
     display: inline-block;
     float: center;
     padding: 30px;
 }
 
-.profileborder {
-    width: 210px;
-    height: 210px;
-    border: 1px black solid;
-    display:inline-block;
+#headshot {
+    width: 240px;
+    height: 240px;
+    display:flex;
+    border: black solid 1px;
     margin: auto;
-    padding: 3px;
+    border-radius: 50%;
 }
 
 #websitecredit1 {
@@ -272,7 +275,7 @@ img:hover, a:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-
+ 
 
 
 
@@ -314,11 +317,14 @@ img:hover, a:hover {
     /* float:left; */
     margin: auto;
     padding: 30px 0px 30px 0px;
-    width: 230px;
-    font-size: 15px;
+    width: 280px;
     text-align: left;
     border: 1px black solid;
     display: inline-block
+    }
+
+    .skillsbox1 {
+        display:hidden;
     }
 
     #moreaboutbox {
@@ -330,9 +336,11 @@ img:hover, a:hover {
         float: center;
     }
 
+   
+
     h1{
         font-size: 25px;
-        padding-top: 60px;
+        padding-top: 55px;
     }
   }
 
