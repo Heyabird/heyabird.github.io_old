@@ -44,6 +44,10 @@ h3{
     margin-top: 30px;
 }
 
+h4 {
+    font-size: 18px;
+}
+
 p {
     font-family: 'Nunito';
     font-size: 15px;
@@ -90,6 +94,13 @@ a:link, a:visited {
 
 img:hover, a:hover {
     color: rgb(255, 73, 137);
+}
+
+#emphasis {
+    font-weight: 900;
+    /* font-style: italic; */
+    font-size: 15px;
+    font-family: 'Space Mono';
 }
 
   /* Create a sticky/fixed navbar */
@@ -210,9 +221,10 @@ img:hover, a:hover {
     display: inline-block;
     width: 260px;
     height: 380px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     margin: 10px;
     size: 15px;
+    padding: 10px;
 }
 
 .p1 {
@@ -231,9 +243,7 @@ img:hover, a:hover {
 }
 
 #moreaboutbox {
-    width: 520px;
     text-align: center;
-    display: inline-block;
     float: center;
     padding: 30px;
 }
@@ -275,6 +285,10 @@ img:hover, a:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
+  #projectimage {
+      width: 800px;
+      margin: auto;
+  }
  
 
 
