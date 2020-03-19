@@ -243,10 +243,20 @@ img:hover, a:hover {
 }
 
 #moreaboutbox {
+    width: 520px;
+    text-align: center;
+    display: inline-block;
+    float: center;
+    padding: 30px;
+}
+
+#projectdescription {
+    margin: auto;
     text-align: center;
     float: center;
     padding: 30px;
 }
+
 
 #headshot {
     width: 240px;
