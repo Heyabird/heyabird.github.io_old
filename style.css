@@ -267,6 +267,11 @@ img:hover, a:hover {
     border-radius: 50%;
 }
 
+#heya_character {
+    width: 200px;
+    border-radius: 50%
+}
+
 #websitecredit1 {
     font-size: 13px;
     color: rgb(201, 201, 201)
