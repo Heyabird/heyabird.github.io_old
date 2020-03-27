@@ -45,7 +45,8 @@ h3{
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: lighter;
 }
 
 p {
@@ -72,14 +73,23 @@ img {
     width: 150px;
 }
 
+.wrap {
+    font-size: smaller;
+}
+
+
 /* hyperlink colors */
 a {
     text-decoration: none;
     /* font-family: 'space mono'; */
+    font-weight: lighter;
+    font-size: 12px;
+
 }
 
 a:link, a:visited {
-    color: #3c3c3c;
+    color: #000000;
+    font-weight: lighter;
 }
 
 #aspecial {
@@ -243,11 +253,17 @@ img:hover, a:hover {
 }
 
 #moreaboutbox {
-    width: 520px;
+    width: 560px;
     text-align: center;
     display: inline-block;
     float: center;
     padding: 30px;
+
+}
+
+#moreaboutdescription {
+    font-family: 'roboto mono';
+    font-size: 12px;
 }
 
 #projectdescription {
@@ -333,12 +349,12 @@ img:hover, a:hover {
     }
 
     #navbar-bottom {
-        font-size: 12px;
-        font-weight: bold;
+        font-size: 11px;
         text-align: center;
         float: center;
         margin: auto;
         color: rgb(255, 73, 137);
+        font-weight: lighter;
     }
 
     .skillsbox {
@@ -374,4 +390,92 @@ img:hover, a:hover {
   }
 
 
-  
+
+
+/* DARK ROOM */
+.darkroom {
+    background: black;
+}
+
+h1.darkroom {
+    color: white;
+    font-size: small;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+    }
+
+.img-fluid {
+    padding:10px;
+    width: 350px;
+}
+
+/* BLOG */
+
+#blogbody {
+    background: linear-gradient(-10deg, #dae0ff,#cfcfcf,#ceb2cf );
+}
+.blogbox {
+    margin: auto;
+    padding: 30px 0px 30px 0px;
+    width: 900px;
+    font-size: 15px;
+    text-align: left;
+    /* border: 1px  solid; */
+    display: inline-block
+}
+
+#blogpost {
+    padding: 5px;
+}
+
+#blogposttitle {
+    text-align: center;
+}
+
+#blogpostsubtitle {
+    text-align: center;
+    font-weight: lighter;
+}
+
+#blogcontent {
+    font-family: 'roboto mono';
+    font-size: 12px;
+}
+
+#divider {
+    border: 0.5px solid black;
+    height: 0px;
+    width: 300px;
+    margin: auto;
+}

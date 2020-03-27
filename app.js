@@ -2,7 +2,7 @@ var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 000;
+    this.period = parseInt(period, 10) || 0o00;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -79,15 +79,20 @@ window.addEventListener("beforeunload",function(e){
 },false);
 
 
-//Modal Button
 
 
-$('#modal_button').click(function(e) {
-  $('.modal').addClass('active');
-  e.preventDefault();
-});
 
-$('.modal').click(function(e) {
-  $('.modal').removeClass('active');
-  e.preventDefault();
-});
+// Darkroom gallery
+const gall = () => {
+  var selectedClass = "";
+  var $ = document.getElementById;
+  $(".filter").click(function(){
+  selectedClass = $(this).attr("data-rel");
+  $("#gallery").fadeTo(100, 0.1);
+  $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+  setTimeout(function() {
+  $("."+selectedClass).fadeIn().addClass('animation');
+  $("#gallery").fadeTo(300, 1);
+  }, 300);
+  });
+  }
