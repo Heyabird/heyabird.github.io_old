@@ -50,8 +50,8 @@ h4 {
 }
 
 p {
-    font-family: 'Nunito';
-    font-size: 15px;
+    font-family: 'roboto mono';
+    font-size: 13px;
 }
 
 #textbox {
@@ -213,7 +213,7 @@ img:hover, a:hover {
     color: rgb(255, 73, 137);
     text-align: right;
     padding: 0 15px 0 15px;
-    /* font-weight: bold; */
+    font-weight: bold;
     /* font-style: italic; */
  }
 
@@ -225,11 +225,12 @@ img:hover, a:hover {
     display: inline-block;
     float:left;
     padding: 0 15px 0 15px;
+    
  }
 
 .projectbox {
     display: inline-block;
-    width: 260px;
+    width: 200px;
     height: 380px;
     /* border: 1px black solid; */
     margin: 10px;
@@ -268,9 +269,10 @@ img:hover, a:hover {
 
 #projectdescription {
     margin: auto;
-    text-align: center;
+    text-align: left;
     float: center;
     padding: 30px;
+    margin-left: 200px;
 }
 
 
