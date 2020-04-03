@@ -15,7 +15,7 @@ body {
     text-align: center;
     background: rgb(255, 233, 252, 0);
     background-size: 400% 400%;
-    background: linear-gradient(-20deg, #ffffff,#dbc5ff, #b6b6ff );
+    background: linear-gradient(-20deg, #bed3ff,#dbc5ff, #b6b6ff );
     /* animation: gradient 20s ease infinite; */
 }
 
@@ -269,10 +269,11 @@ img:hover, a:hover {
 
 #projectdescription {
     margin: auto;
+    width: 700px;
     text-align: left;
-    float: center;
+    /* float: center; */
     padding: 30px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 }
 
 
@@ -319,8 +320,9 @@ img:hover, a:hover {
   }
 
   #projectimage {
-      width: 800px;
+      width: 300px;
       margin: auto;
+      display: inline-block;
   }
  
 
