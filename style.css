@@ -309,7 +309,7 @@ img:hover, a:hover {
     animation-iteration-count: infinite;
   }
 
-  img:hover {
+#shake:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
   
@@ -466,7 +466,7 @@ h1.darkroom {
 /* BLOG */
 
 #blogbody {
-    background: linear-gradient(-10deg, #ffffff,#ffdddd,#fdb7ff );
+    background: white;
 }
 .blogbox {
     margin: auto;
@@ -491,10 +491,18 @@ h1.darkroom {
     font-weight: lighter;
 }
 
+
+#blogpostimage {
+    width:300px;
+    margin: auto;
+    display: flex;
+    align-self: center;
+}
+
 #blogcontent {
     font-family: 'roboto mono';
     font-size: 12px;
-    width: 700px;
+    width: 600px;
     text-align: left;
     margin: auto;
 }
