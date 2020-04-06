@@ -343,77 +343,6 @@ img:hover, a:hover {
 
 
 
-/* for smartphones */
-@media only screen and (max-width: 600px) {
-    #navbar {
-        padding: 10px 2px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-        font-size: 10px;
-    }
-
-    #navbar a {
-    float: none;
-    display: block;
-    text-align: center;
-    /* visibility: hidden; */
-    }
-
-    #navbar-right {
-    float: right;
-        padding-right: 20px;
-        visibility: hidden;
-    }
-
-    #navbar-bottom {
-        font-size: 11px;
-        text-align: center;
-        float: center;
-        margin: auto;
-        color: rgb(255, 73, 137);
-        font-weight: lighter;
-    }
-
-    .skillsbox {
-    /* display: inline-block; */
-    /* float:left; */
-    margin: auto;
-    padding: 10px 0px 10px 0px;
-    width: 280px;
-    text-align: center;
-    align-items: center;
-    border: 1px black solid;
-    /* display: inline-block */
-
-    }
-
-    .skillsbox1 {
-        display: none;
-    }
-    .skillsbox2 {
-        text-align: center;
-        margin: auto;
-        padding: auto;
-        /* display: inline-block; */
-        align-self: center;
-        float: none;
-   
-    }
-
-    #moreaboutbox {
-        width: 270px;
-        font-size: 17px;
-        padding: 10px;
-        margin: auto;
-        text-align: center;
-        float: center;
-    }
-
-   
-
-    h1{
-        font-size: 25px;
-        padding-top: 55px;
-    }
-  }
 
 
 
@@ -516,3 +445,106 @@ h1.darkroom {
     width: 300px;
     margin: auto;
 }
+
+
+
+
+
+
+/* for smartphones */
+@media only screen and (max-width: 600px) {
+    #navbar {
+        padding: 10px 2px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+        font-size: 10px;
+    }
+
+    #navbar a {
+    float: none;
+    display: block;
+    text-align: center;
+    /* visibility: hidden; */
+    }
+
+    #navbar-right {
+    float: right;
+        padding-right: 20px;
+        visibility: hidden;
+    }
+
+    #navbar-bottom {
+        font-size: 11px;
+        text-align: center;
+        float: center;
+        margin: auto;
+        color: rgb(255, 73, 137);
+        font-weight: lighter;
+    }
+
+    .skillsbox {
+    /* display: inline-block; */
+    /* float:left; */
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    width: 280px;
+    text-align: center;
+    align-items: center;
+    border: 1px black solid;
+    /* display: inline-block */
+
+    }
+
+    .skillsbox1 {
+        display: none;
+    }
+    .skillsbox2 {
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        /* display: inline-block; */
+        align-self: center;
+        float: none;
+   
+    }
+
+    #moreaboutbox {
+        width: 270px;
+        font-size: 17px;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+        float: center;
+    }
+
+   
+
+    h1{
+        font-size: 25px;
+        padding-top: 55px;
+    }
+
+    #blogbody, #blogcontent, #blogbox {
+        width: 300px;
+        text-align: left;
+    }
+
+    #blogpostimage, #blogposttitle, #blogpostsubtitle {
+        align-self: left;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    #footer, #navbar-bottom {
+        text-align: left;
+        align-self: left;
+        margin-left: 0;
+        display: none;
+    }
+
+    #projectgif, #projectimage, #projectdescription {
+        width: 300px;
+        padding: 0;
+    }
+
+
+
+  }
