@@ -334,12 +334,14 @@ img:hover, a:hover {
   }
  
   #projectgif {
-      width: 800px;
+      width: 750px;
   }
 
   #wireframes {
       display: inline-block;
   }
+
+
 
 
 
@@ -544,7 +546,7 @@ h1.darkroom {
         display: none;
     }
 
-    #projectgif, #projectimage, #projectdescription {
+    #projectgif, #projectimage, #projectdescription, #wireframes {
         width: 300px;
         padding: 0;
     }
