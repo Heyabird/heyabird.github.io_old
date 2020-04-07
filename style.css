@@ -269,7 +269,7 @@ img:hover, a:hover {
 
 #projectdescription {
     margin: auto;
-    width: 700px;
+    width: 750px;
     text-align: left;
     /* float: center; */
     padding: 30px;
@@ -328,13 +328,17 @@ img:hover, a:hover {
   }
 
   #projectimage {
-      width: 300px;
+      width: 350px;
       margin: auto;
       display: inline-block;
   }
  
   #projectgif {
       width: 800px;
+  }
+
+  #wireframes {
+      display: inline-block;
   }
 
 
