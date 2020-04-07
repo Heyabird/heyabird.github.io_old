@@ -459,6 +459,11 @@ h1.darkroom {
 
 /* for smartphones */
 @media only screen and (max-width: 600px) {
+
+    h1 {
+        padding-top: 25px !important;
+    }
+
     #navbar {
         padding: 10px 2px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
         font-size: 10px;
@@ -540,10 +545,12 @@ h1.darkroom {
     }
 
     #footer, #navbar-bottom {
-        text-align: left;
+        text-align: center;
         align-self: left;
-        margin-left: 0;
-        display: none;
+        margin: auto;
+        float: none;
+
+        /* display: none; */
     }
 
     #projectgif, #projectimage, #projectdescription, #wireframes {
