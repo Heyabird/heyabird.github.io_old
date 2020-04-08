@@ -92,6 +92,11 @@ a:link, a:visited {
     font-weight: lighter;
 }
 
+#special {
+    color:rgb(255, 73, 137);
+    font-weight: bold;
+}
+
 #aspecial {
     color:rgb(255, 73, 137);
     font-weight: bold;

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pikachoose NOTES!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Nunito|Quicksand&display=swap" rel="stylesheet">
+</head>
+
+
+<body id="blogbody">
+    <div id="navbar">
+        <div id=navbar-left>
+        <a href="index.html"><img id="logo" src="portfolio-icons/hi.png"></a>
+      </div>
+        <div id="navbar-right">
+          <!-- <a href="resume.pdf" target="_blank"><div id="bordered">resume</div> </a>
+          <a class="active" href="#skills"> skills</a> -->
+          <a href="index.html#projects"> GO BACK HOME</a>
+        </div>
+      </div>
+    <br/>
+    <br/>
+    <h1 class="typewrite" data-period="2000" data-type='[ "Pikachoose Notes ⚡️"]'><span class="wrap"></span>
+    </h1>  
+    <br/>
+    <p id="projectdescription"> Because Pikachoose was my first "big" full-stack team project, I wanted to write down the notes on how I set up this project with my teammates. These steps are for setting up a <strong>React IN Rails mob project using webpacker with Jest & Enzyme testing.</strong></p>
+   
+    <div class=profileborder> </div>
+    <div class=profileborder> </div>
+    <div id="projectdescription"> 
+      <div id="projectdescription"> 
+        <h3>1. Before Coding </h3>
+        <p>- Talk to your team about roles & expectations</p>   
+        <p>- Set up Github Repo, Trello, Wireframes, & User Stories</p>  
+        <p>- Remember to always Git pull, create a new branch, and commit!</p> 
+        <br/>
+        <h3>2. Start a Rails App & Set Up Devise </h3>
+        <p id="special">$ rails new devise_and_react_app -d postgresql -T</p>
+        <p id="special">$ cd devise_and_react_app</p>
+        <p id="special">$ bundle add devise</p>
+        <p id="special">$ rails generate devise:install</p>
+        <p id="special">$ rails generate devise User</p>
+        <p id="special">$ rails db:create</p>
+        <p id="special">$ rails db:migrate</p> 
+        <p id="special">$ rails s</p>
+        <p>- Inside 'application.html.erb' body, add the alert messages:</p>
+        <div id="special">
+          <p class="notice">&nbsp;	 <%= notice %></p>
+          <p class="alert">&nbsp;	 <%= alert %></p>
+        </div>
+        <p>- Make sure to change the method for signing out from 'delete' to 'get' in 'config>initializers>devise.rb' line 257:</p>    
+        <p id="special">&nbsp; config.sign_out_via = :delete</p>
+        <p>- Put the config inside 'config>environments>development.rb': </p>
+        <p id="special">&nbsp;  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }</p>
+        <br/>
+        <h3>3. Add React & Set it Up</h3>   
+        <p id="special">$ bundle add react-rails</p>
+        <p id="special">$ bundle install</p>
+        <p id="special">$ rails webpacker:install</p>
+        <p id="special">$ rails webpacker:install:react</p>
+        <p id="special">$ rails generate react:install</p>
+        <p id="special">$ yarn install</p>
+        <p>- Generate a new React component: <span id="special">$ rails g react:component App</span>  </p>
+        <p>- Generate a new controller Home: <span id="special">&nbsp;  $ rails g controller Home</span></p>
+        <p>- Add a route to the home page inside 'config>routes.rb':</p>
+        <div id="special">
+          <p>&nbsp; Rails.application.routes.draw do</p>
+          <p>&nbsp;	&nbsp;	&nbsp;devise_for :users</p>
+          <p>&nbsp;	&nbsp;	&nbsp;get '*path', to: 'home#index', constraints: ->(request){ request.format.html? }</p>
+          <p>&nbsp;	 &nbsp;	&nbsp;root to: 'home#index'</p>
+          <p>&nbsp;  end</p>
+        </div>
+        <p>- Inside 'views>home', create a file 'index.html.erb', which will contain the following code: </p>
+        <div id="special">
+          <p>&nbsp;	 <%= react_component("App", {</p>
+          <p>&nbsp;	 &nbsp;	  logged_in: user_signed_in?,</p> 
+          <p>&nbsp;	 &nbsp;	  sign_in_path: new_user_session_path,</p>
+          <p>&nbsp;	 &nbsp;	 sign_out_path: destroy_user_session_path</p>
+          <p>&nbsp;	 }) %></p>
+        </div>
+        <p>- In 'app>javascript', make folders 'component' & 'pages'. Make 'Header.js' file inside the inner component folder. </p>
+        <br/>      
+        <h3>4. Set up Bootstrap</h3>
+        <p id="special">$ bundle add bootstrap</p>
+        <p>-Restart the rails server if running!</p>
+        <p>-Modify the application.css to be a "sass" file:</p>
+        <p id="special">$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss</p>
+        <p>Add an import to the "sass" file <span id="special">@import 'bootstrap';</span> -- you can add in styling here but make sure you end each line with a semi-colon!</p>
+        <p id="special">$ yarn add reactstrap</p>
+        <br/>      
+        <h3>5. Make sure teammates can run this project on their computers</h3>
+        <p>- (Before starting to code everytime) Make sure to run bundle & yarn commands to update dependencies!</p>
+        <p>- Make sure they rails db:create & rails db:migrate!</p>
+        <p>- Make sure they are on the same version of Rails, etc.</p>
+        <p>- If they have a conflicting database error, make sure no one else is running the database server and run rails db:reset (only if you don't care about recreating the database)</p>
+        <p>- If they have postgresql problems, reinstall postgresql</p>
+        <br/>
+        <h3>6. Set up Testing with Jest & Enzyme</h3>
+        <p>- We need to use Jest to run the tests & Enzyme will help Jest read React elements. To do this, first run the command:</p>
+        <p id="special">$ yarn add --dev jest</p>
+        <p id="special">$ yarn add -D enzyme react-test-renderer enzyme-adapter-react-16</p>
+        <p>- In 'package.json', add the following code at the end so that we can use the 'yarn test' command:</p>
+          <p id="special">&nbsp;	 "scripts": {</p>
+          <p ><span id="special">&nbsp;	 &nbsp;	 "test": "jest",</span> &nbsp;&nbsp;  //"yarn test" command will now run "jest"</p>
+          <p id="special">&nbsp;	 &nbsp;	 "test-watch": "jest --watch"</p>
+          <p id="special">&nbsp;	 },</p>
+          <p id="special">&nbsp;	 "jest": {</p>
+          <p id="special">&nbsp;	 &nbsp;	   "roots": [</p>
+          <p ><span id="special">&nbsp;	 &nbsp;	 "app/javascript",</span> &nbsp;&nbsp;  //Jest will search all the files inside this "root" folder</p>
+          <p id="special">&nbsp;	  &nbsp;	 ]</p>
+          <p id="special">&nbsp;	 }</p>
+        <p>- Create a test folder inside 'app>Javascript'</p>
+        <p>- Make a test file inside the test folder that is named similar to the file name you are testing for (for example, 'Header.test.js' for 'Header.js')</p>
+        <p>- In your test file, make sure to import the following (the specifics depend on what your test looks like):</p>
+        <div id="special">
+        <p>&nbsp;	 &nbsp;	 - import React from 'react';</p>
+        <p>&nbsp;	 &nbsp;	 - import Adapter from 'enzyme-adapter-react-16';
+        <p>&nbsp;	 &nbsp;	 - import Enzyme, { shallow } from 'enzyme';</p>
+        <p>&nbsp;	 &nbsp;	 - import Header from './components/components/Header'</p>
+        </div>
+        <br/>
+        <h3>7. Connect to an External API</h3>
+        <p>- Acquire your API key from the external website</p>
+        <p>- Create a file called '.env' in the outermost level of the react app</p>
+        <p>- Save the API key using the format <span id="special">REACT_APP_MY_KEY_NAME_HERE = "my-api-key"</span> inside '.env' file</p>
+        <p>- Add the '.env' file to the '.gitignore' file (write '#api keys' and put the key under) so that no one can steal your precious 🔑 </p>
+        </div>  
+
+      
+      </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!-- <h3><strong>PRODUCT</strong>:</h3> -->
+        <div id="projectdescription">
+        <p><strong>CODE</strong>: <a id="aspecial" target="_blank" href="https://github.com/heyabird">Github Repo</a></p>
+        <br/>
+        <p><strong>DEPLOYED</strong>: <a id="aspecial" href="https://pika-choose.herokuapp.com/">Heroku</a></p>
+        <br/>
+        <p><strong>THOUGHTS</strong>:</p>
+        <p>- Shoutout to Jonas, Meo, and Liz for being awesome teammates! </p>
+        <!-- <p>- It was fun to work with two other programmers on this project, using GitHub and Zoom. </p> -->
+        </div>
+
+
+          <!-- FOOTER BAR -->
+          <div id="footer">
+            <br/>
+              <div id="navbar-bottom">
+                contact me!  &nbsp;
+                  <a href="https://github.com/heyabird" target="_blank">github	&nbsp;</a>
+                  <a href="https://www.linkedin.com/in/heya-kwon-670821a7/" target="_blank">linkedin &nbsp;</a>
+                  <a href="mailto:heyabird@gmail.com?subject=Let's-Work-Together!" target="_blank">email &nbsp;</a>
+                  <br/>
+                  <br/>
+              </div>
+            </div> 
+    
+    
+        </div> 
+    
+</body>
+
+<script src="app.js"></script>
+<script type="text/javascript" src="jQuery.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
