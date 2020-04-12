@@ -114,10 +114,10 @@
           <p id="special">&nbsp;	 },</p>
           <p id="special">&nbsp;	 "jest": {</p>
           <p id="special">&nbsp;	 &nbsp;	   "roots": [</p>
-          <p ><span id="special">&nbsp;	 &nbsp;	 "app/javascript",</span> &nbsp;&nbsp;  //Jest will search all the files inside this "root" folder</p>
+          <p ><span id="special">&nbsp;	 &nbsp;	 "app/__tests__",</span> &nbsp;&nbsp;  //Jest will search all the files inside this "root" folder</p>
           <p id="special">&nbsp;	  &nbsp;	 ]</p>
           <p id="special">&nbsp;	 }</p>
-        <p>- Create a test folder inside 'app>Javascript'</p>
+        <p>- Create a test folder named '__tests__' inside 'app'</p>
         <p>- Make a test file inside the test folder and name it similar to the file name you are testing for (for example, 'Header.test.js' for 'Header.js')</p>
         <p>- In your test file, make sure to import the following (the specifics depend on what your test looks like):</p>
         <div id="special">
@@ -132,6 +132,23 @@
         <p>- Create a file called '.env' in the outermost level of the react app</p>
         <p>- Save the API key using the format <span id="special">REACT_APP_MY_KEY_NAME_HERE = "my-api-key"</span> inside '.env' file</p>
         <p>- Add the '.env' file to the '.gitignore' file (write '#api keys' and put the key under) so that no one can steal your precious 🔑 </p>
+        <p>- in your main App.js file, put a GET fetch method that can receive the Json objects from the api url, for example: </p>
+        <p id="special">&nbsp;	 &nbsp;	 getFilms = () => {
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 &nbsp;	     fetch(`https://some_api_url.com?api_key={$apiKey}`)
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 &nbsp;	     .then((response)=>{
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 &nbsp;	 &nbsp;	     if(response.status === 200){
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 &nbsp;	 &nbsp;	 &nbsp;	     return(response.json())
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 &nbsp;	     .then((films)=>{
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 &nbsp;	 &nbsp;	     this.setState({watchList: films})
+        </p>
+        <p id="special">&nbsp;	 &nbsp;	 })  }
+        </p>
         </div>  
 
       

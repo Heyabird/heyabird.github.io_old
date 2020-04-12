@@ -341,7 +341,18 @@ img:hover, a:hover {
       margin: auto;
       display: inline-block;
   }
- 
+
+  #projectimage2 {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    align-self: center;
+}
+  #userstory {
+    width: 800px;
+    background-color: whit;
+  }
+
   #projectgif {
       width: 750px;
   }
