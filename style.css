@@ -107,6 +107,10 @@ a:link, a:visited {
     color: rgb(255, 73, 137);
 }
 
+button {
+    text-align: left;
+}
+
 img:hover, a:hover {
     color: rgb(255, 73, 137);
 }
