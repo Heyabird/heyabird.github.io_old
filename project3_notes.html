@@ -29,18 +29,18 @@
     <br/>
     <br/>
     <h1 class="typewrite" data-period="2000" data-type='[ "Pikachoose Set-Up Notes ⚡️"]'><span class="wrap"></span>
-    </h1>  
+    </h1>
     <br/>
     <p id="projectdescription"> Because Pikachoose was my first "big" full-stack team project, I wanted to write down the notes on how I set up this project with my teammates. These steps are for setting up a <strong>React IN Rails mob project using webpacker with Jest & Enzyme testing.</strong></p>
-   
+
     <div class=profileborder> </div>
     <div class=profileborder> </div>
-    <div id="projectdescription"> 
-      <div id="projectdescription"> 
+    <div id="projectdescription">
+      <div id="projectdescription">
         <h3>1. Before Coding </h3>
-        <p>- Talk to your team about roles & expectations</p>   
-        <p>- Set up Github Repo, Trello, Wireframes, & User Stories</p>  
-        <p>- Remember to always Git pull, create a new branch, and commit!</p> 
+        <p>- Talk to your team about roles & expectations</p>
+        <p>- Set up Github Repo, Trello, Wireframes, & User Stories</p>
+        <p>- Remember to always Git pull, create a new branch, and commit!</p>
         <br/>
         <h3>2. Start a Rails App & Set Up Devise </h3>
         <p id="special">$ rails new devise_and_react_app -d postgresql -T</p>
@@ -49,19 +49,19 @@
         <p id="special">$ rails generate devise:install</p>
         <p id="special">$ rails generate devise User</p>
         <p id="special">$ rails db:create</p>
-        <p id="special">$ rails db:migrate</p> 
+        <p id="special">$ rails db:migrate</p>
         <p id="special">$ rails s</p>
         <p>- Inside 'application.html.erb' body, add the alert messages:</p>
         <div id="special">
           <p class="notice">&nbsp;	 <%= notice %></p>
           <p class="alert">&nbsp;	 <%= alert %></p>
         </div>
-        <p>- Make sure to change the method for signing out from 'delete' to 'get' in 'config>initializers>devise.rb' line 257:</p>    
+        <p>- Make sure to change the method for signing out from 'delete' to 'get' in 'config>initializers>devise.rb' line 257:</p>
         <p id="special">&nbsp; config.sign_out_via = :delete</p>
         <p>- Put the config inside 'config>environments>development.rb': </p>
         <p id="special">&nbsp;  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }</p>
         <br/>
-        <h3>3. Add React & Set it Up</h3>   
+        <h3>3. Add React & Set it Up</h3>
         <p id="special">$ bundle add react-rails</p>
         <p id="special">$ bundle install</p>
         <p id="special">$ rails webpacker:install</p>
@@ -81,13 +81,13 @@
         <p>- Inside 'views>home', create a file 'index.html.erb', which will contain the following code: </p>
         <div id="special">
           <p>&nbsp;	 <%= react_component("App", {</p>
-          <p>&nbsp;	 &nbsp;	  logged_in: user_signed_in?,</p> 
+          <p>&nbsp;	 &nbsp;	  logged_in: user_signed_in?,</p>
           <p>&nbsp;	 &nbsp;	  sign_in_path: new_user_session_path,</p>
           <p>&nbsp;	 &nbsp;	 sign_out_path: destroy_user_session_path</p>
           <p>&nbsp;	 }) %></p>
         </div>
         <p>- In 'app>javascript', make folders 'component' & 'pages'. Make 'Header.js' file inside the inner component folder. </p>
-        <br/>      
+        <br/>
         <h3>4. Set up Bootstrap</h3>
         <p id="special">$ bundle add bootstrap</p>
         <p>-Restart the rails server if running!</p>
@@ -95,7 +95,7 @@
         <p id="special">$ mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss</p>
         <p>Add an import to the "sass" file <span id="special">@import 'bootstrap';</span> -- you can add in styling here but make sure you end each line with a semi-colon!</p>
         <p id="special">$ yarn add reactstrap</p>
-        <br/>      
+        <br/>
         <h3>5. Make sure teammates can run this project on their computers</h3>
         <p>- (Before starting to code everytime) Make sure to run bundle & yarn commands to update dependencies!</p>
         <p>- Make sure they rails db:create & rails db:migrate!</p>
@@ -132,6 +132,7 @@
         <p>- Create a file called '.env' in the outermost level of the react app</p>
         <p>- Save the API key using the format <span id="special">REACT_APP_MY_KEY_NAME_HERE = "my-api-key"</span> inside '.env' file</p>
         <p>- Add the '.env' file to the '.gitignore' file (write '#api keys' and put the key under) so that no one can steal your precious 🔑 </p>
+        <p>- Make sure to have all your gems installed (there is an .env gem you can install)</p>
         <p>- in your main App.js file, put a GET fetch method that can receive the Json objects from the api url, for example: </p>
         <p id="special">&nbsp;	 &nbsp;	 getFilms = () => {
         </p>
@@ -149,9 +150,9 @@
         </p>
         <p id="special">&nbsp;	 &nbsp;	 })  }
         </p>
-        </div>  
+        </div>
 
-      
+
       </div>
         <br/>
         <br/>
@@ -181,11 +182,11 @@
                   <br/>
                   <br/>
               </div>
-            </div> 
-    
-    
-        </div> 
-    
+            </div>
+
+
+        </div>
+
 </body>
 
 <script src="app.js"></script>
