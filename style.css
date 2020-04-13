@@ -572,7 +572,7 @@ h1.darkroom {
         /* display: none; */
     }
 
-    #projectgif, #projectimage, #projectimage2, #projectdescription, #wireframes {
+    #projectgif, #projectimage, #projectimage2, #projectdescription, #wireframes, #userstory {
         width: 350px;
         padding: 0;
     }
