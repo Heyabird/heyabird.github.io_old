@@ -36,7 +36,7 @@ h1{
     text-align: center;
     font-weight: 100;
     font-family: 'space mono';
-    padding-top: 110px;
+    padding-top: 70px;
 }
 
 h3{
@@ -337,7 +337,7 @@ img:hover, a:hover {
   }
 
   #projectimage {
-      width: 350px;
+      width: 400px;
       margin: auto;
       display: inline-block;
   }
@@ -359,6 +359,7 @@ img:hover, a:hover {
 
   #wireframes {
       display: inline-block;
+      width: 950px;
   }
 
 
@@ -546,8 +547,6 @@ h1.darkroom {
         float: center;
     }
 
-   
-
     h1{
         font-size: 25px;
         padding-top: 55px;
@@ -573,7 +572,7 @@ h1.darkroom {
         /* display: none; */
     }
 
-    #projectgif, #projectimage, #projectdescription, #wireframes {
+    #projectgif, #projectimage, #projectimage2, #projectdescription, #wireframes {
         width: 300px;
         padding: 0;
     }
