@@ -31,7 +31,7 @@
     <h1 class="typewrite" data-period="2000" data-type='[ "Pikachoose Set-Up Notes ⚡️"]'><span class="wrap"></span>
     </h1>
     <br/>
-    <p id="projectdescription"> Because Pikachoose was my first "big" full-stack team project, I wanted to write down the notes on how I set up this project with my teammates. These steps are for setting up a <strong>React IN Rails mob project using webpacker with Jest & Enzyme testing.</strong></p>
+    <p id="projectdescription"> Because Pikachoose was my first "big" full-stack team project, I wanted to write down the notes on how I set up this project with my teammates. These steps are for setting up a <strong>React IN Rails mob project using webpacker with Jest/Enzyme & Rspec testing.</strong></p>
 
     <div class=profileborder> </div>
     <div class=profileborder> </div>
@@ -88,7 +88,7 @@
         </div>
         <p>- In 'app>javascript', make folders 'component' & 'pages'. Make 'Header.js' file inside the inner component folder. </p>
         <br/>
-        <h3>4. Set up Bootstrap</h3>
+        <h3>4. Set up Bootstrap/Reactstrap</h3>
         <p id="special">$ bundle add bootstrap</p>
         <p>-Restart the rails server if running!</p>
         <p>-Modify the application.css to be a "sass" file:</p>
@@ -96,14 +96,15 @@
         <p>Add an import to the "sass" file <span id="special">@import 'bootstrap';</span> -- you can add in styling here but make sure you end each line with a semi-colon!</p>
         <p id="special">$ yarn add reactstrap</p>
         <br/>
-        <h3>5. Make sure teammates can run this project on their computers</h3>
+        <h3>5. Make sure teammates can run this project on their environments</h3>
         <p>- (Before starting to code everytime) Make sure to run bundle & yarn commands to update dependencies!</p>
         <p>- Make sure they rails db:create & rails db:migrate!</p>
         <p>- Make sure they are on the same version of Rails, etc.</p>
         <p>- If they have a conflicting database error, make sure no one else is running the database server and run rails db:reset (only if you don't care about recreating the database)</p>
         <p>- If they have postgresql problems, reinstall postgresql</p>
         <br/>
-        <h3>6. Set up Testing with Jest & Enzyme</h3>
+        <h3>6. Set up Tests with Jest/Enzyme & Rspec</h3>
+        <p><strong>Testing React with Jest/Enzyme</strong></p>
         <p>- We need to use Jest to run the tests & Enzyme will help Jest read React elements. To do this, first run the command:</p>
         <p id="special">$ yarn add --dev jest</p>
         <p id="special">$ yarn add -D enzyme react-test-renderer enzyme-adapter-react-16</p>
@@ -121,18 +122,59 @@
         <p>- Make a test file inside the test folder and name it similar to the file name you are testing for (for example, 'Header.test.js' for 'Header.js')</p>
         <p>- In your test file, make sure to import the following (the specifics depend on what your test looks like):</p>
         <div id="special">
-        <p>&nbsp;	 &nbsp;	 - import React from 'react';</p>
-        <p>&nbsp;	 &nbsp;	 - import Adapter from 'enzyme-adapter-react-16';
-        <p>&nbsp;	 &nbsp;	 - import Enzyme, { shallow } from 'enzyme';</p>
-        <p>&nbsp;	 &nbsp;	 - import Header from './components/components/Header'</p>
+        <p>&nbsp;	 &nbsp;	 $ import React from 'react';</p>
+        <p>&nbsp;	 &nbsp;	 $ import Adapter from 'enzyme-adapter-react-16';
+        <p>&nbsp;	 &nbsp;	 $ import Enzyme, { shallow } from 'enzyme';</p>
+        <p>&nbsp;	 &nbsp;	 $ import Header from './components/components/Header'</p>
         </div>
+        <p>&nbsp;	 &nbsp;	 $ import other necessary components</p>
+        <p>- Have <span id="special">Enzyme.configure({ adapter: new Adapter() });
+        </span> inside each file (unless you want to create a new file just for that)</p>
+        <p>- Tip: always begin with <strong>'shallow'</strong> (tests for one component) and then switch to <strong>'mount'</strong> (tests for component lifecycle and children behavior); use <strong>'render'</strong> if you want to test children rendering with less overhead than mount and don't want to test lifycle methods</p>
+        <p>- If the component you are testing uses props, you can define a local variable inside your test and pass that as a prop</p>
+        <p>- When testing for a page/component that uses the show method, make sure you use <span id="special">match={{params: {id:1} }}</span> to find the specific object with that id</p>
+        <br/>
+        <p><strong>Testing Rails with Rspec</strong></p>
+        <p>- To download, run <span id="special">echo "gem 'rspec-rails', groups: [:development, :test]</span></p>
+        <p id="special">$ bundle install</p>
+        <p id="special">$ rails generate rspec:install</p>
+        <p>- This should have generated a 'spec' folder inside the root folder of your app. Inside the 'spec' folder, create two folders: 'models' and 'requests'</p>
+        <p>- Inside the 'requests' folder, make a test file (ex: 'histories_spec.rb') for your database </p>
+        <p>- Inside the 'models' folder, make a test file with name according to the model file you are trying to test (ex: if you are testing for 'history.rb', make 'history_spec.rb')</p>
+        <p>- Put <span id="special">require ‘rails_helper’</span></p>
+        <br/>
+        <p><strong>Showing Testing Coverage for Jest/Enzyme</strong></p>
+        <p>- Add the following lines of codes in the 'package.json':</p>
+        <div id="special">
+        <p>&nbsp;	 {</p>
+        <p>&nbsp;	 &nbsp;	 "name": "continuous-test-code-coverage-guide",</p>
+        <p>&nbsp;	 &nbsp;	 "scripts": {</p>
+        <p>&nbsp;	 &nbsp;	 &nbsp;	     "start": "webpack",
+        </p>
+        <p>&nbsp;	 &nbsp;	 &nbsp;	     "test": "jest --coverage --coverageDirectory=output/coverage/jest"
+        </p>
+        <p>&nbsp;	 &nbsp;	   },</p>
+        <p>&nbsp;	 &nbsp;	   ...</p>
+        <p>&nbsp;	 &nbsp;	   "jest": {</p>
+        <p>&nbsp;	 &nbsp;	 &nbsp;	     "coverageReporters": [
+        </p>
+        <p>&nbsp;	 &nbsp;  &nbsp;  &nbsp;"text",
+        </p>
+        <p>&nbsp;	 &nbsp; &nbsp;	 &nbsp;"html"
+        </p>
+        <p>&nbsp;	 &nbsp; &nbsp;	 ]</p>
+        <p>&nbsp;	 &nbsp; &nbsp;    ...</p>
+        <p>&nbsp;	 &nbsp;  }</p>
+        <p>&nbsp;	 }</p>
+        </div>
+        <p>- Now, running 'yarn test' will also give a test coverage! </p>
         <br/>
         <h3>7. Connect to an External API</h3>
         <p>- Acquire your API key from the external website</p>
         <p>- Create a file called '.env' in the outermost level of the react app</p>
         <p>- Save the API key using the format <span id="special">REACT_APP_MY_KEY_NAME_HERE = "my-api-key"</span> inside '.env' file</p>
         <p>- Add the '.env' file to the '.gitignore' file (write '#api keys' and put the key under) so that no one can steal your precious 🔑 </p>
-        <p>- Make sure to have all your gems installed (there is an .env gem you can install)</p>
+        <p>- Make sure to have all your gems installed (there is an .env gem called "dotenv-rails" you can install)</p>
         <p>- in your main App.js file, put a GET fetch method that can receive the Json objects from the api url, for example: </p>
         <p id="special">&nbsp;	 &nbsp;	 getFilms = () => {
         </p>
@@ -150,23 +192,18 @@
         </p>
         <p id="special">&nbsp;	 &nbsp;	 })  }
         </p>
+        <br/>
+        <h3>8. Deploy to Heroku</h3>
+        <p>- </p>
         </div>
-
-
       </div>
-        <br/>
-        <br/>
-        <br/>
         <br/>
         <br/>
         <!-- <h3><strong>PRODUCT</strong>:</h3> -->
         <div id="projectdescription">
-        <p><strong>CODE</strong>: <a id="aspecial" target="_blank" href="https://github.com/heyabird">Github Repo</a></p>
+          <p><strong>YOU CAN SEE THE APP ON</strong>: <a id="aspecial" target="_blank" href="https://pikachoose.herokuapp.com/">HEROKU</a></p>
+          <p><strong>YOU CAN SEE THE CODE ON</strong>: <a id="aspecial" target="_blank" href="https://github.com/TheJonasSisters/pikachoose_app">GITHUB REPO</a></p>
         <br/>
-        <p><strong>DEPLOYED</strong>: <a id="aspecial" href="https://pika-choose.herokuapp.com/">Heroku</a></p>
-        <br/>
-        <p><strong>THOUGHTS</strong>:</p>
-        <p>- Shoutout to Jonas, Meo, and Liz for being awesome teammates! </p>
         <!-- <p>- It was fun to work with two other programmers on this project, using GitHub and Zoom. </p> -->
         </div>
 
