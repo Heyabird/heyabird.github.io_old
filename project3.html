@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pikachoose!</title>
+    <title>Pikamovie!</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
@@ -29,8 +29,14 @@
     </h1>
     <br/>
     <div class=profileborder> </div>
+    <img id="projectgif" src="Pikachoose/Pikamovie_landingpage.png"/>
     <div class=profileborder> </div>
-    <h3><strong>OVERVIEW</strong>:</h3>
+    <br/>
+    <div id="finalproduct">
+      <div id="textbox"><p><strong></strong><a id="aspecial" target="_blank" href="https://pikamovie.herokuapp.com/">DEPLOYED ON HEROKU</a></p></div>
+      <div id="textbox"><p><strong></strong><a id="aspecial" target="_blank" href="https://github.com/TheJonasSisters/pikachoose_app">GITHUB REPO</a></p></div>
+      <div id="textbox"><p><strong></strong><a id="aspecial" target="_blank" href="project3_notes.html">SET UP NOTES</a></p></div>
+    </div>
     <div id="projectdescription">
         <!-- <p id="moreaboutdescription">User Story </p> -->
           <p><strong>OBJECTIVE</strong>: Make an app that tackles the modern day "Decision Fatigue" by helping users make decisions on what to eat & what to watch</p>
@@ -39,28 +45,28 @@
           <p>- How to connect to an external API</p>
           <p>- How to work in a remote team of four with Agile framework using Zoom, Trello, and Github</p>
           <p><strong>WHAT I USED</strong>: React, Rails, HTML/CSS, Figma, Trello, Github, external API <a id="aspecial" href="https://www.themoviedb.org/?language=en-US" target="_blank">(The Movie Database)</a> </p>
-          <p><strong>HOW I SET IT UP</strong>: Click <a id="aspecial" href="project3_notes.html">HERE</a> to see my notes on how I set up this project! </p>
+          <p><strong>HOW I SET IT UP</strong>: <a id="aspecial" href="project3_notes.html">Click HERE to see my notes on how I set up this project!</a> </p>
+          <p><strong>COLLABORATORS</strong>: Meo Hyunh, Jonas Fernandes, Liz Havird</p>
+
          </div>
           <h3><strong>USER STORY</strong>:</h3>
           <div id="projectdescription">
           <div id="userstory">
           <p>**MVPS are boldened</p>
-          <p><strong> 1. As an unregistered user, I see a landing page with the name of the app as a header and what this app is about. If I click on any other button, I get alerted to sign in.</strong></p>
-          <p><strong> 2a. As an unregistered user, I can click on a sign-up button to sign-in.</strong></p>
+          <p><strong> 1. As an unregistered user, I see a landing page with the name of the app as a header, a nav bar, and a button "what to watch".</strong></p>
+          <p><strong> 2a. As an unregistered user, I can see a sign-up and log-in button in the landing page. I can click on a sign-up button to sign-in.</strong></p>
           <p><strong> 2b. As a registered user, I click on a log-in button to log in.</strong></p>
-          <p>3. As a registered user, I can see 2  for categories. These categories are: “What to watch” and “What to eat”.</p>
-          <p><strong> 4. As a registered user, I can click on “what to watch”, to be asked another clarifying question, and be given a randomly-generated answer.</strong></p>
-          <p>5. As a registered user, I can click on “what to eat”, and am then presented with buttons describing different types of food. I am able to check multiple genres of food (Asian, Mexican, etc.). </p>
-          <p>6. As a registered user, I will then be asked “dining in or dining out?”.</p>
-          <p>7. (STRETCH) As a registered user, if I choose dining out, I am then presented with an input field to type in my zip code.</p>
-          <p>8. As a registered user, if I choose dining out, I am then presented with a randomized answer, filtered based upon user’s zip code & food genre preferences. </p>
-          <p>9. As a registered user, if I choose dining in, I am then presented a randomized answer based on the genres of food I had previously selected.</p>
-          <p><strong>10. As a registered user, I can see and click on a logout button to log out.</strong></p>
-          <p><strong> 11. As a registered user, I can see my decision history.</strong></p>
-          <p>12. As a registered user, I have the option to favorite decisions suggested to me in the past.</p>
-          <p><strong>13. As a registered user, I can click on individual decisions in the decision history, giving me the option to comment, edit, & delete comments on past decisions.</strong></p>
-          <p>14. As a registered user, I can always go back to the home page.</p>
-          <p>15. As a user, I can click on a button to see the About Us page that tells the user how cool we are and links to our github profiles.</p>
+          <p>3. As an unregistered user, I can see the button: “What to watch” in the landing page.</p>
+          <p><strong> 4. As an unregistered user, I can click on “what to watch”</strong></p>
+          <p>5. As an unregistered user, when I  click on "what to watch", I am asked "what genres you want?", and I can choose a genre or genres I want to filter the movies from.</p>
+          <p><strong>6. As an unregistered user, I can click on a "submit" to receive a randomly generated movie.</strong></p>
+          <p><strong>7. As a registered user, I can see and click on a logout button to log out.</strong></p>
+          <p><strong> 8. As a registered user, I can click on 'decision history' in the navbar to see an index of movies that were previously selected for me.</strong></p>
+          <p>9. As a registered user, I can click on individual movies to go to a history show page. In there, I can view the details about the movie and have the option to favorite decisions suggested to me in the past. I also see a button to take me back to the history index page.</p>
+          <p><strong>10. As a registered user, I can click on 'favorites' in the nav to see an index of  movies I saved as my favorite. There is a button under each movie that I can click to delete it from the favorites index page.</strong></p>
+          <p>11. As a registered user, I can click on one of the movies in the favorites index page to take me to favorite show page where I can see more details of each individual movie. Once on that page, I can add and edit a comment on the movie. I can also delete it from favorite or go back to favorites index page.</p>
+          <p>12. As a registered user, I can always go back to the home page.</p>
+          <p>13. As a user, I can click on a button to see the About Us page that tells the user how cool we are and links to our github profiles.</p>
         </div>
       </div>
         <br/>
@@ -79,20 +85,27 @@
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
         <h3><strong>FINAL PRODUCT</strong>:</h3>
-        <div id="projectdescription">
-        <p><strong>YOU CAN SEE THE APP ON</strong>: <a id="aspecial" target="_blank" href="https://pikamovie.herokuapp.com/">HEROKU</a></p>
-        <p><strong>YOU CAN SEE THE CODE ON</strong>: <a id="aspecial" target="_blank" href="https://github.com/TheJonasSisters/pikachoose_app">GITHUB REPO</a></p>
-        <p><strong>COLLABORATORS</strong>: Meo Hyunh, Jonas Fernandes, Liz Havird</p>
+        <br/>
+        <img id="projectgif_phone" src="Pikachoose/pikamovie_demo2.gif"/>
+        <br/>
+        <br/>
+        <br/>
+        <img id="projectgif" src="Pikachoose/pikamovie_demo1.gif"/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="finalproduct">
+          <div id="textbox"><p><strong>YOU CAN SEE THE APP ON</strong>: <a id="aspecial" target="_blank" href="https://pikamovie.herokuapp.com/">HEROKU </a></p></div>
+          <div id="textbox"><p><strong>YOU CAN SEE THE CODE ON</strong>: <a id="aspecial" target="_blank" href="https://github.com/TheJonasSisters/pikachoose_app">GITHUB REPO </a></p></div>
         </div>
         <br/>
-        <h3><strong>THOUGHTS:</strong></h3>
+        <!-- <h3><strong>THOUGHTS:</strong></h3>
         <div id="projectdescription">
         <p>- It was super fun to collaborate with the team on Github when building this product! ALWAYS <strong>git pull first</strong> and <strong>commit to a specific branch!</strong></p>
         <p>- Make sure to find an external API with good documentation.</p>
-        <p>- Use Agile framework! Start with the simplest MVP, and then move forward making the next simplest MVP, and so on...</p>
+        <p>- Use Agile framework! Start with the simplest MVP, and then move forward making the next simplest MVP, and so on...</p> -->
         <!-- <p>- It was fun to work with two other programmers on this project, using GitHub and Zoom. </p> -->
         </div>
         <br/>
@@ -106,13 +119,13 @@
           <div id="footer">
             <br/>
               <div id="navbar-bottom">
-                contact me!  &nbsp;
-                  <a href="https://github.com/heyabird" target="_blank">github	&nbsp;</a>
-                  <a href="https://www.linkedin.com/in/heya-kwon-670821a7/" target="_blank">linkedin &nbsp;</a>
-                  <a href="mailto:heyabird@gmail.com?subject=Let's-Work-Together!" target="_blank">email &nbsp;</a>
-                  <br/>
-                  <br/>
-              </div>
+                <a href="https://github.com/heyabird" target="_blank">github	&nbsp;</a>
+                <a href="https://www.linkedin.com/in/heya-kwon-670821a7/" target="_blank">linkedin &nbsp;</a>
+                <a href="mailto:heyabird@gmail.com?subject=Let's-Work-Together!" target="_blank">email &nbsp;</a>
+                <a href="resume.pdf" target="_blank" ><div id="textbox">resume</div> </a>
+                <br/>
+                <br/>
+            </div>
             </div>
 
 

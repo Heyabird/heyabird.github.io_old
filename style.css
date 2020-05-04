@@ -1,6 +1,6 @@
 /* * {cursor: url(https://github.com/Heyabird/heyabird.github.io/blob/master/fly.png?raw=true), auto !important;} */
 
-/* Start http://www.cursors-4u.com */ 
+/* Start http://www.cursors-4u.com */
 /* * {cursor: url(fly.png) 1 1, auto} */
 /* End http://www.cursors-4u.com */
 
@@ -47,6 +47,10 @@ h3{
 h4 {
     font-size: 17px;
     font-weight: lighter;
+}
+
+h5 {
+  font-size: 13px;
 }
 
 p {
@@ -148,24 +152,24 @@ img:hover, a:hover {
     line-height: 25px;
     border-radius: 4px;
   }
-  
+
   /* Style the logo */
   #navbar #logo {
     font-size: 35px;
     font-weight: bold;
     transition: 0.4s;
   }
-  
+
   /* Links on mouse-over */
   #navbar a:hover {
     color: rgb(255, 73, 137);
   }
-  
+
   /* Style the active/current link */
   #navbar a.active {
     /* color: rgb(255, 0, 43); */
   }
-  
+
   /* Display some links to the right */
   #navbar-left {
       float:left;
@@ -180,7 +184,7 @@ img:hover, a:hover {
       float: left;
   }
 
-    
+
   #footer {
     overflow: hidden;
     background-color: rgb(255, 221, 250, 0);
@@ -234,7 +238,7 @@ img:hover, a:hover {
     display: inline-block;
     float:left;
     padding: 0 15px 0 15px;
-    
+
  }
 
 .projectbox {
@@ -255,7 +259,7 @@ img:hover, a:hover {
 
 .backhome {
     color: rgb(255, 204, 255);
-    
+
 }
 
 #projects {
@@ -313,7 +317,7 @@ img:hover, a:hover {
 #logo:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
-  
+
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
   }
@@ -321,11 +325,11 @@ img:hover, a:hover {
 #shake:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
-  
+
     /* When the animation is finished, start again */
     animation-iteration-count: infinite;
   }
-  
+
   @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     50% { transform: translate(-1px, 2px) rotate(-1deg); }
@@ -354,8 +358,12 @@ img:hover, a:hover {
   }
 
   #projectgif {
-      width: 750px;
+      width: 700px;
   }
+
+  #projectgif_phone {
+    width: 250px;
+}
 
   #wireframes {
       display: inline-block;
@@ -398,7 +406,7 @@ h1.darkroom {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
-    
+
     @media (max-width: 450px) {
     .gallery {
     -webkit-column-count: 1;
@@ -409,7 +417,7 @@ h1.darkroom {
     column-width: 100%;
     }
     }
-    
+
     @media (max-width: 400px) {
     .btn.filter {
     padding-left: 1.1rem;
@@ -535,7 +543,7 @@ h1.darkroom {
         /* display: inline-block; */
         align-self: center;
         float: none;
-   
+
     }
 
     #moreaboutbox {
@@ -572,7 +580,7 @@ h1.darkroom {
         /* display: none; */
     }
 
-    #projectgif, #projectimage, #projectimage2, #projectdescription, #wireframes, #userstory {
+    #projectgif, #projectgif_phone, #projectimage, #projectimage2, #projectdescription, #wireframes, #userstory {
         width: 350px;
         padding: 0;
     }
