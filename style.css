@@ -340,6 +340,18 @@ img:hover, a:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
+  #mobileimage {
+    width: 300px;
+    margin: auto;
+    margin: 5px 10px 5px 10px;
+    display: inline-block;
+    }      
+
+  #storyimage{
+      width: 700px;
+      margin: auto;
+      display: inline-block;  }
+
   #projectimage {
       width: 400px;
       margin: auto;
@@ -580,7 +592,7 @@ h1.darkroom {
         /* display: none; */
     }
 
-    #projectgif, #projectgif_phone, #projectimage, #projectimage2, #projectdescription, #wireframes, #userstory {
+    #projectgif, #projectgif_phone, #mobileimage, #storyimage, #projectimage, #projectimage2, #projectdescription, #wireframes, #userstory {
         width: 350px;
         padding: 0;
     }
