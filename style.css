@@ -289,6 +289,15 @@ img:hover, a:hover {
     /* margin-left: 200px; */
 }
 
+#centeredinfo {
+  margin: auto;
+  width: 850px;
+  /* text-align: left; */
+  /* float: center; */
+  padding: 30px;
+  /* margin-left: 200px; */
+}
+
 
 #headshot {
     width: 240px;
