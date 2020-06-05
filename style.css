@@ -601,7 +601,7 @@ h1.darkroom {
         /* display: none; */
     }
 
-    #projectgif, #projectgif_phone, #mobileimage, #storyimage, #projectimage, #projectimage2, #projectdescription, #wireframes, #userstory {
+    #projectgif, #projectgif_phone, #mobileimage, #storyimage, #projectimage, #centeredinfo, #projectimage2, #projectdescription, #wireframes, #userstory {
         width: 350px;
         padding: 0;
     }
