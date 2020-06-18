@@ -19,6 +19,10 @@ body {
     /* animation: gradient 20s ease infinite; */
 }
 
+.section {
+    padding: 200px 0 0 0 ;
+}
+
 #aboutbody {
     background: linear-gradient(-10deg, #dae0ff,#b9c4ff,#a8cbff );
 }
@@ -259,11 +263,6 @@ img:hover, a:hover {
 
 .backhome {
     color: rgb(255, 204, 255);
-
-}
-
-#projects {
-    /* background-color: #fef0ff; */
 }
 
 #moreaboutbox {
@@ -320,7 +319,8 @@ img:hover, a:hover {
 
 #websitecredit2 {
     font-size: 13px;
-    color: rgb(232, 232, 232)
+    color: rgb(232, 232, 232);
+    padding: 80px 0 50px 0;
 }
 
 #logo:hover {
@@ -540,6 +540,7 @@ h1.darkroom {
         color: rgb(255, 73, 137);
         font-weight: lighter;
     }
+
 
     .skillsbox {
     /* display: inline-block; */
