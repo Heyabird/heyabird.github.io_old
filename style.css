@@ -28,10 +28,6 @@ body {
 }
 
 #projectbody {
-    background: linear-gradient(-10deg, #dae0ff,#f9ffc2,#aeffa3 );
-}
-
-#projectbody2 {
     background: linear-gradient(-10deg, #dae0ff,#c2e9ff,#a3c8ff );
 }
 
