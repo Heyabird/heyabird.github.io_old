@@ -15,7 +15,7 @@ body {
     text-align: center;
     background: rgb(255, 233, 252, 0);
     background-size: 400% 400%;
-    background: linear-gradient(-20deg, #bed3ff,#dbc5ff, #b6b6ff );
+    /* background: linear-gradient(-20deg, #bed3ff,#dbc5ff, #b6b6ff ); */
     /* animation: gradient 20s ease infinite; */
 }
 
@@ -24,11 +24,11 @@ body {
 }
 
 #aboutbody {
-    background: linear-gradient(-10deg, #dae0ff,#b9c4ff,#a8cbff );
+    /* background: linear-gradient(-10deg, #dae0ff,#b9c4ff,#a8cbff ); */
 }
 
 #projectbody {
-    background: linear-gradient(-10deg, #dae0ff,#c2e9ff,#a3c8ff );
+    background-color: #dae0ff;
 }
 
 #pinktext {
