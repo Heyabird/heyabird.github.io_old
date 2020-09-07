@@ -10,7 +10,7 @@ html {
 
 body {
     color:rgba(31, 31, 31);
-    font-family: 'Space Mono';
+    font-family: 'roboto';
     font-weight: lighter;
     text-align: center;
     background: rgb(255, 233, 252, 0);
@@ -35,12 +35,17 @@ body {
     color: rgb(255, 73, 137);
 }
 
-h1{
+h1, h2 {
     font-size: 30px;
     text-align: center;
-    font-weight: 100;
-    font-family: 'space mono';
+    font-weight: 300;
+    font-family: 'roboto';
     padding-top: 70px;
+}
+
+#header {
+    font-family: 'roboto';
+    font-weight: 300;
 }
 
 h3{
@@ -58,7 +63,7 @@ h5 {
 }
 
 p {
-    font-family: 'roboto mono';
+    font-family: 'roboto';
     font-size: 13.5px;
     font-weight: 400;
 }
@@ -128,7 +133,7 @@ img:hover, a:hover {
     font-weight: 900;
     /* font-style: italic; */
     font-size: 15px;
-    font-family: 'Space Mono';
+    font-family: 'Roboto';
 }
 
   /* Create a sticky/fixed navbar */
@@ -146,7 +151,7 @@ img:hover, a:hover {
 
   /* Style the navbar links */
   #navbar a {
-    font-family: 'space mono' ;
+    font-family: 'roboto' ;
     /* color: rgba(31, 31, 31); */
     text-align: center;
     display: inline-block;
@@ -277,7 +282,7 @@ img:hover, a:hover {
 }
 
 #moreaboutdescription {
-    font-family: 'roboto mono';
+    font-family: 'roboto';
     font-size: 12px;
 }
 
