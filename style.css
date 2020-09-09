@@ -13,6 +13,7 @@ body {
     font-family: 'roboto';
     font-weight: lighter;
     text-align: center;
+    font-size: 14px;
     background: rgb(255, 233, 252, 0);
     background-size: 400% 400%;
     /* background: linear-gradient(-20deg, #bed3ff,#dbc5ff, #b6b6ff ); */
@@ -36,7 +37,7 @@ body {
 }
 
 h1, h2 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     font-weight: 400;
     font-family: 'roboto';
