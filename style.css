@@ -49,8 +49,7 @@ h1, h2 {
     font-weight: 300;
 }
 
-h3{
-    /* font-family: 'Nunito'; */
+h3 {
     margin-top: 30px;
 }
 
@@ -59,12 +58,12 @@ h4 {
 }
 
 h5 {
-  font-size: 13px;
+   font-size: 13px;
 }
 
 p {
     font-family: 'roboto';
-    font-size: 14.5px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -76,6 +75,12 @@ p {
     display: inline-block;
     padding: 3px 5px 3px 5px;
 }
+
+#textbox:hover {
+    background-color: black;
+    color: white;
+}
+
 #bordered {
     color: rgba(31, 31, 31)solid ;
     border: 1px rgba(31, 31, 31) solid;
@@ -92,14 +97,12 @@ img {
     /* font-size: smaller; */
 }
 
-
 /* hyperlink colors */
 a {
     text-decoration: none;
     /* font-family: 'space mono'; */
     font-weight: lighter;
     font-size: 14px;
-
 }
 
 a:link, a:visited {
@@ -255,12 +258,12 @@ img:hover, a:hover {
 
 .projectbox {
     display: inline-block;
-    width: 200px;
+    width: 180px;
     height: 380px;
     /* border: 1px black solid; */
     margin: 6px;
     size: 15px;
-    padding: 6px;
+    padding: 16px;
 }
 
 .p1 {
@@ -401,17 +404,6 @@ img:hover, a:hover {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* DARK ROOM */
 .darkroom {
     background: black;
@@ -510,10 +502,6 @@ h1.darkroom {
     width: 300px;
     margin: auto;
 }
-
-
-
-
 
 
 /* for smartphones */
@@ -616,6 +604,8 @@ h1.darkroom {
         padding: 0;
     }
 
-
+    #websitecredit2 {
+        padding: 20px 0 50px 0;
+    }
 
   }
