@@ -46,7 +46,7 @@ h1, h2 {
 
 #header {
     font-family: 'roboto';
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 h3 {
