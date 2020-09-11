@@ -11,7 +11,7 @@ html {
 body {
     color:rgba(31, 31, 31);
     font-family: 'roboto';
-    font-weight: lighter;
+    /* font-weight: lighter; */
     text-align: center;
     font-size: 14.5px;
     background: rgb(255, 233, 252, 0);
@@ -54,11 +54,11 @@ h3 {
 }
 
 h4 {
-    font-size: 17px;
+    /* font-size: 17px; */
 }
 
 h5 {
-   font-size: 13px;
+   font-size: 17px;
 }
 
 p {
@@ -101,13 +101,13 @@ img {
 a {
     text-decoration: none;
     /* font-family: 'space mono'; */
-    font-weight: lighter;
-    font-size: 14px;
+    /* font-weight: lighter; */
+    /* font-size: 14px; */
 }
 
 a:link, a:visited {
     color: #000000;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 
 #special {
@@ -142,7 +142,7 @@ img:hover, a:hover {
 
   /* Create a sticky/fixed navbar */
   #navbar {
-    font-family: 'Nunito' ;
+    /* font-family: 'Nunito' ; */
     overflow: hidden;
     background-color: rgb(255, 255, 255,0);
     padding: 40px 10px; /* Large padding which will shrink on scroll (using JS) */
@@ -162,7 +162,7 @@ img:hover, a:hover {
     padding: 3px;
     margin: 2px;
     text-decoration: none;
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 25px;
     border-radius: 4px;
   }
@@ -212,8 +212,8 @@ img:hover, a:hover {
 
   #navbar-bottom {
       padding-bottom: 0px;
-      font-size: 14px;
-      font-weight: bold;
+      font-size: 14.5px;
+      /* font-weight: bold; */
       float: right;
       margin-right: 20px;
       color: rgb(255, 73, 137);
@@ -533,7 +533,7 @@ h1.darkroom {
         float: center;
         margin: auto;
         color: rgb(255, 73, 137);
-        font-weight: lighter;
+        /* font-weight: lighter; */
     }
 
 
