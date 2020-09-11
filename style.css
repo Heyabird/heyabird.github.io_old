@@ -574,20 +574,28 @@ h1.darkroom {
         float: center;
     }
 
-    h1{
+    h2{
         font-size: 25px;
         padding-top: 55px;
     }
 
-    #blogbody, #blogcontent, #blogbox {
+    .blogbox, #blogcontent{
         width: 300px;
         text-align: left;
     }
 
-    #blogpostimage, #blogposttitle, #blogpostsubtitle {
+    #blogpost {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    #blogposttitle, #blogpostsubtitle {
+        /* text-align: cente; */
+    }
+
+    #blogpostimage {
         align-self: left;
         margin-left: 0;
-        text-align: left;
     }
 
     #footer, #navbar-bottom {
@@ -595,6 +603,7 @@ h1.darkroom {
         align-self: left;
         margin: auto;
         float: none;
+        background-color: rgba(255, 255, 255, .5);
 
         /* display: none; */
     }
