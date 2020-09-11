@@ -76,6 +76,10 @@ p {
     padding: 3px 5px 3px 5px;
 }
 
+#projectbody #textbox {
+    margin:5px;
+}
+
 #textbox:hover {
     background-color: black;
     color: white;
@@ -523,12 +527,13 @@ h1.darkroom {
 
     #navbar-right {
     float: right;
-        padding-right: 20px;
-        visibility: hidden;
+    padding-right: 20px;
+    /* display: inline-block; */
+    visibility: hidden;
     }
 
     #navbar-bottom {
-        font-size: 11px;
+        /* font-size: 11px; */
         text-align: center;
         float: center;
         margin: auto;
