@@ -154,7 +154,6 @@ img:hover, a:hover {
   #navbar {
     /* font-family: 'Nunito' ; */
     overflow: hidden;
-    background-color: rgba(255, 255, 255, .5);
     padding: 40px 10px; /* Large padding which will shrink on scroll (using JS) */
     transition: 0.4s; /* Adds a transition effect when the padding is decreased */
     position: fixed; /* Sticky/fixed navbar */
