@@ -264,7 +264,6 @@ img:hover, a:hover {
 .projectbox {
     display: inline-block;
     width: 180px;
-    height: 380px;
     /* border: 1px black solid; */
     margin: 6px;
     size: 15px;
