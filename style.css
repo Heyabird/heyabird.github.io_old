@@ -269,6 +269,7 @@ img:hover, a:hover {
     margin: 6px;
     size: 15px;
     padding: 16px;
+    cursor: pointer;
 }
 
 .p1 {
