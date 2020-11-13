@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 body {
     color:rgba(31, 31, 31);
     font-family: 'roboto';
@@ -87,8 +91,8 @@ p {
 }
 
 #textbox:hover {
-    background-color: black;
-    color: white;
+    /* background-color: black;
+    color: white; */
 }
 
 #bordered {
@@ -141,6 +145,7 @@ button {
 
 img:hover, a:hover {
     color:rgb(76, 0, 255);
+    cursor: pointer;
 }
 
 #emphasis {
