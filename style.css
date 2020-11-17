@@ -298,7 +298,7 @@ img:hover, a:hover {
 }
 
 .projectbox img {
-    filter: grayscale(70%);
+    /* filter: grayscale(50%); */
 }
 
 .projectbox img:hover {
