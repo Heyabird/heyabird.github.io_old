@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 a:hover {
@@ -143,7 +144,7 @@ a:link, a:visited {
     font-family: 'roboto mono';
 }
 
-#aspecial:hover {
+#special:hover, #aspecial:hover {
     background-color: rgb(244, 202, 255);
 }
 
@@ -255,7 +256,7 @@ img:hover, a:hover {
    display: inline-block;
    border-radius: 3px;
    box-shadow: 5px 5px;
-   background-color: rgb(244, 202, 255);
+   background-color: rgb(250, 228, 255);
 }
 .skillsbox1 {
     /* display: inline-block; */
