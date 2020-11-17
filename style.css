@@ -14,7 +14,7 @@ a:hover {
 
 body {
     color:rgba(31, 31, 31);
-    font-family: 'roboto';
+    font-family: 'roboto mono';
     /* font-weight: lighter; */
     text-align: center;
     font-size: 14.5px;
@@ -49,12 +49,12 @@ h1, h2 {
     font-size: 40px;
     text-align: center;
     font-weight: 400;
-    font-family: 'roboto';
+    font-family: 'roboto mono';
     padding-top: 90px;
 }
 
 #header {
-    font-family: 'roboto';
+    font-family: 'roboto mono';
     font-size: 20px;
     /* font-weight: 300; */
 }
@@ -170,7 +170,7 @@ img:hover, a:hover {
 
   /* Style the navbar links */
   #navbar a {
-    font-family: 'roboto' ;
+    font-family: 'roboto mono' ;
     /* color: rgba(31, 31, 31); */
     text-align: center;
     display: inline-block;
