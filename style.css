@@ -86,7 +86,11 @@ p {
     font-size: 20px;
     font-weight: 300;
     display: inline-block;
-    padding: 3px 5px 3px 5px;
+    padding: 3px 8px 3px 8px;
+}
+
+#textbox:hover {
+    background-color: rgb(244, 202, 255);
 }
 
 #projectbody #textbox {
@@ -136,10 +140,11 @@ a:link, a:visited {
     color:rgb(76, 0, 255);
     font-weight: bold;
     text-decoration: underline;
+    font-family: 'roboto mono';
 }
 
 #aspecial:hover {
-    color:rgb(76, 0, 255);
+    background-color: rgb(244, 202, 255);
 }
 
 button {
@@ -247,7 +252,10 @@ img:hover, a:hover {
    font-size: 15px;
    text-align: left;
    border: 1px black solid;
-   display: inline-block
+   display: inline-block;
+   border-radius: 3px;
+   box-shadow: 5px 5px;
+   background-color: rgb(244, 202, 255);
 }
 .skillsbox1 {
     /* display: inline-block; */
