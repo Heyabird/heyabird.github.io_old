@@ -297,6 +297,15 @@ img:hover, a:hover {
     cursor: pointer;
 }
 
+.projectbox img {
+    filter: grayscale(70%);
+}
+
+.projectbox img:hover {
+    filter: grayscale(0%);
+
+}
+
 .p1 {
     display: flex;
     padding: 40px;
