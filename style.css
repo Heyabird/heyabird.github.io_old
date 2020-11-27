@@ -447,11 +447,15 @@ img:hover, a:hover {
 /* DARK ROOM */
 .darkroom {
     background: black;
+    color: rgb(157, 157, 157);
 }
 
-h1.darkroom {
-    color: white;
-    font-size: small;
+.darkroom a {
+    color:  rgb(157, 157, 157);
+}
+
+.darkroom #logo {
+    width: 100px;
 }
 
 .gallery {
@@ -489,7 +493,7 @@ h1.darkroom {
 
 .img-fluid {
     padding:10px;
-    width: 350px;
+    width: 450px;
 }
 
 /* BLOG */
@@ -662,6 +666,11 @@ h1.darkroom {
     #websitecredit2 {
         padding: 20px 0 50px 0;
         font-style: italics; 
+    }
+
+    .img-fluid {
+        padding:10px;
+        width: 90%;
     }
 
   }
