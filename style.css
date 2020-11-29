@@ -297,10 +297,6 @@ img:hover, a:hover {
     cursor: pointer;
 }
 
-.projectbox img {
-    /* filter: grayscale(50%); */
-}
-
 .projectbox img:hover {
     filter: grayscale(0%);
 

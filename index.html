@@ -89,18 +89,18 @@
       <div class="section">
       <h2>Projects</h2>
       <div class="homeicons">
-        <a class="projectbox" id="projects" href="100days.html">
-          <img src="project-icons/100.png" alt="Pikamovie Project Icon Image"/>
+        <a class="projectbox" id="100days" href="100days.html">
+          <img src="project-icons/100_before.svg" alt="100 days Project Icon Image" onmouseover="hover(this);" onmouseout="unhover(this);"/>
           <h4 id="header">#100daysofCode </h4>          
           <p>Coding everyday for 100 days straight</p>
         </a>
-        <a class="projectbox" id="projects" href="project3.html">
-          <img src="project-icons/pikachoose.png" alt="Pikamovie Project Icon Image"/>
+        <a class="projectbox" id="pikamovie" href="project3.html">
+          <img src="project-icons/Pikamovie_before.svg" alt="Pikamovie Project Icon Image"/>
           <h4 id="header">PikaMovie </h4>
           <p>React in Rails app that decides movies for you</p>
         </a>
-        <a class="projectbox" id="projects" href="project2.html">
-          <img src="project-icons/map_app.png" alt="Air Pollution Map Project Icon Image"/>
+        <a class="projectbox" id="airapp" href="project2.html">
+          <img src="project-icons/Airapp_before.svg" alt="Air Pollution Map Project Icon Image"/>
           <h4 id="header">AirMap</h4>
           <p>Data viz app using React, Django, & Mapbox</p>
         </a>
@@ -111,8 +111,8 @@
           <a id="textbox" href="project4.html"
           >learn more</a>
         </div>-->
-        <a class="projectbox" href="project5.html">
-            <img src="project-icons/bus.png" alt="BusyBus Project Icon Image"/>
+        <a class="projectbox" id="airapp" href="project5.html">
+            <img src="project-icons/UX_before.svg" alt="BusyBus Project Icon Image"/>
             <h4 id="header">BusyBus</h4>
             <p>UX/UI Challenge for a Chicago Bus App</p>
         </a>
@@ -133,6 +133,19 @@
 
 </div>
 
+<script>
+function hover(element) {
+  // if (this.src == 'project-icons/100_before.svg') {
+  //   element.setAttribute('src', 'project-icons/100_after.svg');
+  // }
+  hundred_days = document.getElementById('100days').firstChild;
+  console.log(hundred_days);
+  element.setAttribute('src', 'project-icons/100_after.svg');
+}
+function unhover(element) {
+  element.setAttribute('src', 'project-icons/100_before.svg');
+}
+</script>
 <script src="app.js"></script>
 <script type="text/javascript" src="jQuery.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
