@@ -95,12 +95,12 @@
           <p>Coding everyday for 100 days straight</p>
         </a>
         <a class="projectbox" id="pikamovie" href="project3.html">
-          <img src="project-icons/Pikamovie_before.svg" alt="Pikamovie Project Icon Image"/>
+          <img src="project-icons/Pikamovie_before.svg" alt="Pikamovie Project Icon Image" onmouseover="hover(this);" onmouseout="unhover(this);"/>
           <h4 id="header">PikaMovie </h4>
           <p>React in Rails app that decides movies for you</p>
         </a>
         <a class="projectbox" id="airapp" href="project2.html">
-          <img src="project-icons/Airapp_before.svg" alt="Air Pollution Map Project Icon Image"/>
+          <img src="project-icons/Airapp_before.svg" alt="Air Pollution Map Project Icon Image" onmouseover="hover(this);" onmouseout="unhover(this);"/>
           <h4 id="header">AirMap</h4>
           <p>Data viz app using React, Django, & Mapbox</p>
         </a>
@@ -111,8 +111,8 @@
           <a id="textbox" href="project4.html"
           >learn more</a>
         </div>-->
-        <a class="projectbox" id="airapp" href="project5.html">
-            <img src="project-icons/UX_before.svg" alt="BusyBus Project Icon Image"/>
+        <a class="projectbox" id="busybus" href="project5.html">
+            <img src="project-icons/UX_before.svg" alt="BusyBus Project Icon Image" onmouseover="hover(this);" onmouseout="unhover(this);"/>
             <h4 id="header">BusyBus</h4>
             <p>UX/UI Challenge for a Chicago Bus App</p>
         </a>
@@ -134,16 +134,33 @@
 </div>
 
 <script>
+var hundred_days_img = document.getElementById('100days').getElementsByTagName('img')[0];
+var pikamovie_img = document.getElementById('pikamovie').getElementsByTagName('img')[0];
+var airapp_img = document.getElementById('airapp').getElementsByTagName('img')[0];
+var busybus_img = document.getElementById('busybus').getElementsByTagName('img')[0];
 function hover(element) {
-  // if (this.src == 'project-icons/100_before.svg') {
-  //   element.setAttribute('src', 'project-icons/100_after.svg');
-  // }
-  hundred_days = document.getElementById('100days').firstChild;
-  console.log(hundred_days);
-  element.setAttribute('src', 'project-icons/100_after.svg');
+  console.log(airapp_img)
+  console.log(busybus_img)
+  if (element == hundred_days_img) {
+    hundred_days_img.setAttribute('src', 'project-icons/100_after.svg');
+  } else if (element == pikamovie_img) {
+    pikamovie_img.setAttribute('src', 'project-icons/pikamovie_after.svg');
+  } else if (element == airapp_img) {
+    airapp_img.setAttribute('src', 'project-icons/airapp_after.svg');
+  } else if (element == busybus_img) {
+    busybus_img.setAttribute('src', 'project-icons/UX_after.svg');
+  }
 }
 function unhover(element) {
-  element.setAttribute('src', 'project-icons/100_before.svg');
+  if (element == hundred_days_img) {
+    hundred_days_img.setAttribute('src', 'project-icons/100_before.svg');
+  } else if (element == pikamovie_img) {
+    pikamovie_img.setAttribute('src', 'project-icons/pikamovie_before.svg')
+  } else if (element == airapp_img) {
+    airapp_img.setAttribute('src', 'project-icons/airapp_before.svg');
+  } else if (element == busybus_img) {
+    busybus_img.setAttribute('src', 'project-icons/UX_before.svg');
+  }
 }
 </script>
 <script src="app.js"></script>
