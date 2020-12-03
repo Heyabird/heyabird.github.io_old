@@ -30,7 +30,7 @@
         <div id=navbar-left>
          <a href="#about"><img id="logo" src="portfolio-icons/h.png" alt="Logo of Heya"/></a>
       </div>
-        <div id="navbar-right">
+      <div id="navbar-right">
           <!-- <a href="resume.pdf" target="_blank"><div id="bordered">resume</div> </a> -->
           <a class="active" href="#skills"> skills</a>
           <a href="#projects"> projects</a>
@@ -104,32 +104,35 @@
           <h4 id="header">AirMap</h4>
           <p>Data viz app using React, Django, & Mapbox</p>
         </a>
-        <!--<div class="projectbox">
-          <h4 id="header">MUZE </h4>
-          <img id="shake" src="musicapp.png" alt="Muze App Project Icon Image"/>
-          <p>Dating/friendship app for music lovers</p>
-          <a id="textbox" href="project4.html"
-          >learn more</a>
-        </div>-->
         <a class="projectbox" id="busybus" href="project5.html">
             <img src="project-icons/UX_before.svg" alt="BusyBus Project Icon Image" onmouseover="hover(this);" onmouseout="unhover(this);"/>
             <h4 id="header">BusyBus</h4>
             <p>UX/UI Challenge for a Chicago Bus App</p>
         </a>
       </div>
-      <p id=websitecredit2>designed and built with love by heya</p>
-      </div>
+      <p id="websitecredit2">designed and built with love by heya</p>
+    </div>
 
 
-      <!-- FOOTER BAR -->
-      <div id="footer">
+
+    <!-- FOOTER BAR -->
+    <div id="footer">
+      <div id="footer-content">
+        <div id="modal" class="speech-bubble">
+          <span class="close">&times;</span>
+          <p><b>Oops! Resume being updated.</b><br/>Email heya for the updated resume.</p>
+        </div>
         <div id="navbar-bottom">
             <a href="https://github.com/heyabird" target="_blank">github	&nbsp;</a>
             <a href="https://www.linkedin.com/in/heya/" target="_blank">linkedin &nbsp;</a>
             <a href="mailto:heyabird@gmail.com?subject=Let's-Work-Together!" target="_blank">email &nbsp;</a>
-            <a href="resume.pdf" target="_blank" ><div id="textbox">resume</div> </a>
+            <a 
+            target="_blank"id="modal-btn" >
+              <div id="textbox">resume</div> 
+            </a>
         </div>
       </div>
+    </div>
 
 </div>
 
@@ -162,6 +165,25 @@ function unhover(element) {
     busybus_img.setAttribute('src', 'project-icons/UX_before.svg');
   }
 }
+
+var modal = document.getElementById('modal');
+var btn = document.getElementById('modal-btn');
+var close_btn = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display="block";
+}
+
+close_btn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 </script>
 <script src="app.js"></script>
 <script type="text/javascript" src="jQuery.js"></script>
